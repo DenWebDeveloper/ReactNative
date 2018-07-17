@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import {ScrollView,StyleSheet} from 'react-native'
-import Navigation from '../components/Navigation'
+import NavigationBarLayout from '../components/NavigationBarLayout'
 import ClothesCards from '../components/ClothesCards'
 
 class ListCardClothesScreen extends Component {
     static navigationOptions = {
-        headerTitle: <Navigation title='Список'/>,
+        headerTitle: <NavigationBarLayout title='Список'/>,
     };
 
     render() {
@@ -26,10 +26,9 @@ class ListCardClothesScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         padding: 15,
-        flex:1,
         flexDirection: 'row',
         flexWrap:'wrap',
-        justifyContent: 'space-between',
+        justifyContent:'center'
     }
 });
 
